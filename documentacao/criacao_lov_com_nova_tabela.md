@@ -6,13 +6,13 @@
 <strong>
   **** criação da tabela ****
   
-  CREATE TABLE TIPOPUBLICACAO (
-    TIPOPUB    NUMBER(10) NOT NULL ENABLE, 
-	  DESCRICAO  VARCHAR2(100)
-  )
-  /
-  ALTER TABLE TIPOPUBLICACAO ADD CONSTRAINT TIPOPUBLICACAO_PK PRIMARY KEY (TIPOPUB)
-  /
+<p>  CREATE TABLE TIPOPUBLICACAO (								</p>
+<p>    TIPOPUB    NUMBER(10) NOT NULL ENABLE, 							</p>
+<p>	  DESCRICAO  VARCHAR2(100)								</p>
+<p>  )												</p>
+<p>  /												</p>
+<p>  ALTER TABLE TIPOPUBLICACAO ADD CONSTRAINT TIPOPUBLICACAO_PK PRIMARY KEY (TIPOPUB)		</p>
+<p> /												</p>
 
   **** descricao das colunas ****
   
