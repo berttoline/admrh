@@ -4,7 +4,7 @@
 
 <p>1º Monta a tabela no banco de dados conforme exemplo onde faremos a conversão do campo enum tipopub para uma tabela em banco de dados.</p>
 <strong>
-  **** criação da tabela ****
+  **** criação da tabela ****	</br>
   
   CREATE TABLE TIPOPUBLICACAO (	</br>
     TIPOPUB    NUMBER(10) NOT NULL ENABLE,	</br>
@@ -14,14 +14,14 @@
   ALTER TABLE TIPOPUBLICACAO ADD CONSTRAINT TIPOPUBLICACAO_PK PRIMARY KEY (TIPOPUB)	</br>
  /	</br>
 
-  **** descricao das colunas ****
+  **** descricao das colunas ****	</br>
   
   COMMENT ON COLUMN TIPOPUBLICACAO.TIPOPUB IS 'ID tipo publicacao'	</br>
   /	</br>
   COMMENT ON COLUMN TIPOPUBLICACAO.DESCRICAO IS 'Descricao tipo publicacao'	</br>
   /	</br>
 
-  **** insersão de dados na tabela ****
+  **** insersão de dados na tabela ****	</br>
   INSERT INTO TIPOPUBLICACAO(TIPOPUB, DESCRICAO)VALUES(1, 'DJE')	</br>
   /	</br>
   INSERT INTO TIPOPUBLICACAO(TIPOPUB, DESCRICAO)VALUES(2, 'DOU')	</br>
@@ -31,7 +31,7 @@
   INSERT INTO TIPOPUBLICACAO(TIPOPUB, DESCRICAO)VALUES(4, 'DJEA')	</br>
   /	</br>
 
-  **** adição do campo (tipopub == tipobublicacao) na tabela documentos onde ele sera inserido. ****
+  **** adição do campo (tipopub == tipobublicacao) na tabela documentos onde ele sera inserido. ****	</br>
   ALTER TABLE DOCUMENTOS ADD TIPOPUB NUMBER(10)	</br>	</br>
   /	</br>
 
